@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="inde.css">
+    <title>Luvers Lane❣</title>
+    <link rel="stylesheet" href="/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
@@ -14,7 +14,8 @@
   <div class="row">
       <div class="col">
           <!--NavBar is Pink!-->
-          <nav class="navbar navbar-expand-lg" style= "background-color: #EEA0DD;">
+          <!--Going to comment out navbar because it is not needed for login-->
+          <!--<nav class="navbar navbar-expand-lg" style= "background-color: #EEA0DD;">
               <div class="container-fluid">
                 <a class="navbar-brand" href="images/LLlogo.png">♥</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +55,7 @@
             </nav>
       </div>
   </div>
-</div>
+</div>-->
 
     <div>
         <img src="images/LLlogo.png" alt="LoversLaneLogo">
@@ -63,18 +64,15 @@
             <h2>Sign In</h2>
             <h3>Hi there! Nice to see you again.</h3>
         </header>
-        <form>
-            <label for="Email">Email:</label>
-            <br>
-            <input type="email" name="email" id="email_input">
-        </form>
-        <form>
-            <label for="User-password">Password:</label>
-            <br>
-            <input type="password" id="user-password" name="user-password">
+        <form class="box" action="login.html" method="POST">
+            <h2>Login</h2>
+            <input type="email" name="email" id="email-login" placeholder="Enter Email" required>
+            
+            <input type="password" name="user-password" id="password-login" placeholder="Enter Password" required>
+            <input type="submit" value="Sign in">
         </form>
         <br>
- <input type="submit" value="Sign in">
+        
     </div>
     <script src="index.js"></script>
     <script src="itemsController.js"></script>

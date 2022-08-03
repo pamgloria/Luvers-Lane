@@ -1,4 +1,77 @@
-h1{
-    background-color: rgba(255, 0, 234, 0.301);
+* {
+    color: #ffffff;
+}
+
+body {
+    background-image: url("/images/fireworks3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #EEA0DD90;
+    border-radius: 20px;
+    text-align:center;
+}
+
+label {
+    color:#ffffff;
+}
+
+.box labeh2l {
+    font-size: 30px;
+    /*font-weight: 700;*/
+    color: white;
+}
+
+.box input[type="email"],.box input[type="password"] {
+    border:0;
+    background: none;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+}
+
+.box input[type="email"]:focus, .box input[type="password"]:focus {
+    width: 270px;
+    border-color: #ffc400ec;
+    color:#ffffff;
+}
+
+.box input[type="submit"] {
+    border:0;
+    background: none;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 35px;
+    width: 120px;
+    outline: none;
+    color: #ffffffec;
+    border-radius: 24px;
+    transition: 0.25px;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: rgba(0, 0, 0, 0.5);
 }
