@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(224, 176, 214);
+}
+
+body {
+    --twitter-color: #eb3fc6;
+    --twitter-background: #988394;
+    background-image: url("/Luvers-Lane/images/fireworks4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navbarOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbarOption h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+h2 a {
+    text-decoration: none;
+    color: rgb(224, 176, 214);
+}
+
+.navbarOption:hover {
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+}
+
+.navbarOption.active {
+    color: var(--twitter-color);
+}
+
+body {
+    display: flex;
+    height: 100vh; /*was 100vh*/
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+.navbar {
+    border-right: 1px solid var(--twitter-background); /*pink line*/
+    flex: 0.2;
+    min-width: 20;
+    background: rgba(226, 45, 184, 0.131); 
+    margin-top:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#heart {
+    font-size: 40px;
+}
+
+/*post*/
+.post {
+    flex: 0.5;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+.post_header {
+    /*position:sticky;*/
+    top: 0;
+    background-color: rgba(226, 45, 184, 0.131);
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+}
+
+.post_header h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.post::-webkit-scrollbar {
+    display: none;
+}
+
+.post {
+    scrollbar-width: none;
+}
+
+/*post box*/
+.postbox_input img {
+
+    border-radius: 50%;
+    height: 200px;
+    
+}
+
+.postBox {
+    padding-bottom: 10px;
+    border-bottom: 5px solid var(--twitter-background);
+    padding-right: 10px;
+    background-color: rgba(226, 45, 184, 0.131);
+}
+
+.postBox form {
+    display: flex;
+    flex-direction: column;
+}
+
+.postbox_input {
+    display: flex;
+    padding: 20px;
+}
+
+.postbox_input input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    background-color: rgba(182, 145, 173, 0.667);
+    color: white;
+}
+
+.postbox_input input::placeholder {
+    color:white;
+    text-align: center;
+}
+
+.postBox_postButton {
+    background-color: var(--twitter-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+/*feed*/
+.feed_avatar img {
+    border-radius: 50%;
+    height: 70px;
+    
+}
+
+.feed {
+    display:flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+    background-color: rgba(226, 45, 184, 0.131);
+}
+
+.feed_body img {
+    width: 450px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-left: 15%;
+}
+
+.feed_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px auto;
+}
+
+.feed_badge {
+    font-size: 14px !important;
+    color: var(--twitter-color);
+    margin-right: 5px;
+}
+
+.feed_headerSpecial {
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+}
+
+.feed_headerText h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.feed_headerDescription {
+    margin-bottom: 10px;
+    font-size: 15px;
+
+}
+
+.feed_body {
+    flex:1;
+    padding: 10px;
+}
+
+.feed_avatar {
+    padding: 20px;
+}
+
+.feed_header {
+    background-color: rgba(255, 1, 196, 0.482);
+    width: 80%;
+}
