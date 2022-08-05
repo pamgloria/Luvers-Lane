@@ -8,7 +8,7 @@
 body {
     --twitter-color: #eb3fc6;
     --twitter-background: #988394;
-    background-image: url("/Luvers-Lane/images/fireworks4.jpg");
+    background-image: url("/images/fireworks4.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -54,11 +54,11 @@ body {
 }
 
 .navbar {
-    border-right: 1px solid var(--twitter-background); /*pink line*/
+    border: 5px solid var(--twitter-background); /*pink line*/
     flex: 0.2;
     min-width: 20;
-    background: rgba(226, 45, 184, 0.131); 
-    margin-top:20px;
+    background: rgba(111, 111, 111, 0.7); 
+    
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -70,7 +70,7 @@ body {
 /*post*/
 .post {
     flex: 0.5;
-    border-right: 1px solid var(--twitter-background);
+    border-right: 5px solid var(--twitter-background);
     min-width: fit-content;
     overflow-y: scroll;
 }
@@ -78,9 +78,10 @@ body {
 .post_header {
     /*position:sticky;*/
     top: 0;
-    background-color: rgba(226, 45, 184, 0.131);
+    background-color: rgba(111, 111, 111, 0.7);
     z-index: 100;
-    border: 1px solid var(--twitter-background);
+    border-top: 5px solid var(--twitter-background);
+    border-bottom: 5px solid var(--twitter-background);
     padding: 15px 20px;
 }
 
@@ -109,7 +110,7 @@ body {
     padding-bottom: 10px;
     border-bottom: 5px solid var(--twitter-background);
     padding-right: 10px;
-    background-color: rgba(226, 45, 184, 0.131);
+    background-color: rgba(111, 111, 111, 0.7);
 }
 
 .postBox form {
@@ -122,7 +123,7 @@ body {
     padding: 20px;
 }
 
-.postbox_input input {
+.postbox_input textarea {
     flex: 1;
     margin-left: 20px;
     font-size: 20px;
@@ -130,15 +131,16 @@ body {
     outline:none;
     background-color: rgba(182, 145, 173, 0.667);
     color: white;
-}
+}/**/
 
-.postbox_input input::placeholder {
+.postbox_input textarea::placeholder {
     color:white;
-    text-align: center;
+    text-align: left;
+    padding: 10px;
 }
 
 .postBox_postButton {
-    background-color: var(--twitter-color);
+    background-color: #aa2e68;
     border: none;
     color: white;
     font-weight: 900;
@@ -159,9 +161,9 @@ body {
 .feed {
     display:flex;
     align-items: flex-start;
-    border-bottom: 1px solid var(--twitter-background);
+    border-bottom: 5px solid var(--twitter-background);
     padding-bottom: 10px;
-    background-color: rgba(226, 45, 184, 0.131);
+    background-color: rgba(111, 111, 111, 0.7);
 }
 
 .feed_body img {
@@ -186,18 +188,23 @@ body {
 .feed_headerSpecial {
     font-weight: 600;
     font-size: 12px;
-    color: gray;
+    color: #aa2e68;
 }
 
 .feed_headerText h3 {
     font-size: 15px;
     margin-bottom: 5px;
+    color: white;
 }
 
 .feed_headerDescription {
     margin-bottom: 10px;
     font-size: 15px;
+    
+}
 
+.feed_headerDescription p {
+    color: white;
 }
 
 .feed_body {
@@ -210,6 +217,6 @@ body {
 }
 
 .feed_header {
-    background-color: rgba(255, 1, 196, 0.482);
+    background-color: rgba(182, 145, 173, 0.667);
     width: 80%;
 }
